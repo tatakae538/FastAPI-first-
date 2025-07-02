@@ -1,0 +1,4 @@
+docker run --name my-postgres -e POSTGRES_PASSWORD=12345 -e POSTGRES_DB=test_db -p 5432:5432 -d postgres
+docker exec -it my-postgres psql -U postgres -d test_db
+SELECT * FROM messages;
+
