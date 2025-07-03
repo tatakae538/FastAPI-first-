@@ -14,7 +14,7 @@ Base = declarative_base()
 # Затем определяем модель
 class Message(Base):
     __tablename__ = "messages"
-
+    __table_args__ = {'schema': 'message_schema'}
     id = Column(Integer, primary_key=True)
     sender = Column(String(100))
     text = Column(String)
