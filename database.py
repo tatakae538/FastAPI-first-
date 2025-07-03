@@ -6,7 +6,6 @@ from datetime import datetime
 # Настройки подключения
 DATABASE_URL = "postgresql://postgres:12345@localhost:5432/test_db"
 engine = create_engine(DATABASE_URL)
-
 #сначала создаем Base
 Base = declarative_base()
 
